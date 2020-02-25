@@ -1,0 +1,641 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0125.0835                               -->
+<workbook original-version='18.1' source-build='2019.4.3 (20194.20.0125.0835)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='global_power_plant_database' inline='true' name='federated.1xw4adw0r2yrwu1fytjmc1mvgaee' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='global_power_plant_database' name='textscan.1lg6j0s11eytd915atvq31gkfagz'>
+            <connection class='textscan' directory='C:/Users/mhmat/Documents/GitHub/csc337_coursework1/data' filename='global_power_plant_database.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1lg6j0s11eytd915atvq31gkfagz' name='global_power_plant_database.csv' table='[global_power_plant_database#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='string' name='country_long' ordinal='1' />
+            <column datatype='string' name='name' ordinal='2' />
+            <column datatype='string' name='gppd_idnr' ordinal='3' />
+            <column datatype='real' name='capacity_mw' ordinal='4' />
+            <column datatype='real' name='latitude' ordinal='5' />
+            <column datatype='real' name='longitude' ordinal='6' />
+            <column datatype='string' name='primary_fuel' ordinal='7' />
+            <column datatype='string' name='other_fuel1' ordinal='8' />
+            <column datatype='string' name='other_fuel2' ordinal='9' />
+            <column datatype='string' name='other_fuel3' ordinal='10' />
+            <column datatype='real' name='commissioning_year' ordinal='11' />
+            <column datatype='string' name='owner' ordinal='12' />
+            <column datatype='string' name='source' ordinal='13' />
+            <column datatype='string' name='url' ordinal='14' />
+            <column datatype='string' name='geolocation_source' ordinal='15' />
+            <column datatype='integer' name='wepp_id' ordinal='16' />
+            <column datatype='integer' name='year_of_capacity_data' ordinal='17' />
+            <column datatype='real' name='generation_gwh_2013' ordinal='18' />
+            <column datatype='real' name='generation_gwh_2014' ordinal='19' />
+            <column datatype='real' name='generation_gwh_2015' ordinal='20' />
+            <column datatype='real' name='generation_gwh_2016' ordinal='21' />
+            <column datatype='real' name='generation_gwh_2017' ordinal='22' />
+            <column datatype='real' name='estimated_generation_gwh' ordinal='23' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_long</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_long]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>country_long</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gppd_idnr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gppd_idnr]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>gppd_idnr</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>capacity_mw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[capacity_mw]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>capacity_mw</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>primary_fuel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[primary_fuel]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>primary_fuel</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>other_fuel1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[other_fuel1]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>other_fuel1</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>other_fuel2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[other_fuel2]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>other_fuel2</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>other_fuel3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[other_fuel3]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>other_fuel3</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>commissioning_year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[commissioning_year]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>commissioning_year</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>owner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[owner]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>owner</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>source</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geolocation_source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[geolocation_source]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>geolocation_source</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wepp_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wepp_id]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>wepp_id</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_of_capacity_data</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year_of_capacity_data]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>year_of_capacity_data</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>generation_gwh_2013</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[generation_gwh_2013]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>generation_gwh_2013</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>generation_gwh_2014</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[generation_gwh_2014]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>generation_gwh_2014</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>generation_gwh_2015</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[generation_gwh_2015]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>generation_gwh_2015</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>generation_gwh_2016</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[generation_gwh_2016]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>generation_gwh_2016</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>generation_gwh_2017</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[generation_gwh_2017]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>generation_gwh_2017</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>estimated_generation_gwh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[estimated_generation_gwh]</local-name>
+            <parent-name>[global_power_plant_database.csv]</parent-name>
+            <remote-alias>estimated_generation_gwh</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='real' name='[commissioning_year]' role='dimension' type='quantitative' />
+      <column aggregation='None' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='None' datatype='string' name='[country_long]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='integer' name='[wepp_id]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[year_of_capacity_data]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.541612' measure-ordering='alphabetic' measure-percentage='0.458388' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Circular' fontsize='24'>Global Power Generation by Fuel (2014)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='global_power_plant_database' name='federated.1xw4adw0r2yrwu1fytjmc1mvgaee' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xw4adw0r2yrwu1fytjmc1mvgaee'>
+            <column aggregation='None' datatype='string' name='[country_long]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[estimated_generation_gwh]' role='measure' type='quantitative' />
+            <column-instance column='[country_long]' derivation='None' name='[none:country_long:nk]' pivot='key' type='nominal' />
+            <column-instance column='[owner]' derivation='None' name='[none:owner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[primary_fuel]' derivation='None' name='[none:primary_fuel:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[owner]' role='dimension' type='nominal' />
+            <column datatype='string' name='[primary_fuel]' role='dimension' type='nominal' />
+            <column-instance column='[estimated_generation_gwh]' derivation='Sum' name='[sum:estimated_generation_gwh:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[none:owner:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:owner:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:owner:nk]' member='%null%' />
+                <groupfilter function='member' level='[none:owner:nk]' member='&quot;1&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[none:primary_fuel:nk]' direction='ASC' using='[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[sum:estimated_generation_gwh:qk]' />
+          <filter class='quantitative' column='[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[sum:estimated_generation_gwh:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[none:owner:nk]</column>
+            <column>[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[sum:estimated_generation_gwh:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='1867' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[sum:estimated_generation_gwh:qk]' max='700000.0' num-steps='5' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Circular' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[sum:estimated_generation_gwh:qk]' />
+              <color column='[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[sum:estimated_generation_gwh:qk]' />
+              <text column='[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[none:primary_fuel:nk]' />
+              <text column='[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[none:country_long:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run bold='true'>&lt;[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[none:country_long:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Fuel type:&#9;</run>
+                <run bold='true'>&lt;[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[none:primary_fuel:nk]&gt;</run>
+                <run fontalignment='2'>Æ&#10;</run>
+                <run fontalignment='2' fontcolor='#787878'>Total generation:&#9;</run>
+                <run bold='true' fontalignment='2'>&lt;[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[sum:estimated_generation_gwh:qk]&gt; GWh</run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true'>&lt;[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[none:primary_fuel:nk]&gt;</run>
+                <run>: &lt;[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[none:country_long:nk]&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2EFD1611-53C6-4177-B6A0-BC25DCBA942D}' />
+    </worksheet>
+  </worksheets>
+  <windows show-side-pane='false' source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[none:country_long:nk]</field>
+            <field>[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[none:primary_fuel:nk]</field>
+            <field>[federated.1xw4adw0r2yrwu1fytjmc1mvgaee].[sum:estimated_generation_gwh:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{280623F4-880C-4D50-92A8-0915CFD70EC4}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAUjElEQVR4nO3deXCcd33H8fez96U9JK20Oi3ZsiPb8e34SGJyOBckhJwlTMuU0hYCZRhK
+      6UCnQKcd2mE6HYZkWqYD00nD0BBKQ0jicDo+ILFjO74PWZZlHbaOlXa1u9Lex/P0D9my5ZVs
+      ax0sK8/39Zee4/f4u5797PN7nn1+v1U0TdMQQqcMs12AELNJAiB0TQIgdM10+YqjX/k28VPd
+      s1CKmAsCm5ag9Z+e7TKuScW6VpShjivuUxSA+KluYofa/mBFibnN21CG1t0+22Vck3yDE0P/
+      qSvuI10goWvTBqD6oQ/R+s0v0PzZZ4q2edcuw3vbsvNHMBD46L1U3X8H5RtW4r9v4/g+q5f+
+      YSoWNwWTz0fgc39F4NnPY/R6J29UFCqefGpi0f2hu1GsVso23D6xzr54CebqQNFx3XfdDUYj
+      3gcexH3nJsz+KjCcf5sqhvHlGTJU1mJ/7Fnsj30WLLbJr2O6RhV3rObEPzyPtdJL0188jb2x
+      loE3tlH/9IeJHmojG4pQ1jqfbHSMfDxBaPsebHXV1D/zMIrRhJbP0/ipJygkUyTOnMW9pIXe
+      H70OqjrjFyBuPq61txF7ayuZs73YFi7C/cwfkzhyGOu8RgqxGAaHE/viJaTaTmCw2UBRMLrd
+      lH/scfLhMGo2Q9mGjSQOHsBcVUU+EkGxWDF5PKCq5CMR0DTcd91N/MB72FsWURiNYW1qJjc4
+      iGIef4/lhoZIHj92xVrNS9eTeft1tMQo5gXLMLWuJde2D1Pz0ukDMHq8g9avf45CKoNiNGBy
+      OfCuWoL71oVkhsJkQyNoQDYUweovx3//7VBQibd3YbRZQLGipjMU0hk8KxbjbK5HMRnRshKA
+      D4LE0aNU/tEzaIUCmTOdKCYjZr8f16o1pHt6KIzG4Px3rIXRGK5Vq8mFQxhdLjAZMRjt5AYH
+      MXo8mKsDqNksFApoGigmEwaHA5PHS25wAJOvHGtTE6n2dgqJOOaaGrRMhuxAP/bWxVcNQP70
+      EWx3PQEKFAa6UQwGjJW1mFuWoVz+TfDuR5+9eBGsKBMvYuLvS9ddarr117pdzAnzProOrftI
+      8YbreX9cre3V2k+jevNqDP1XqBXlKhfBl/6DF/6eroirFSdv/g+263l/XK3t1bbN1MSxNLkL
+      JK6fZ/N9oCgoVivVf/6X45+w01DMZmwLWm5gdVc27TWAEFdibZyHpaEBCoWJOzPOFavI9PVh
+      W7AAx5JbQQE1lSYfjWLyeVGTSXLhMAa7Hc/m+8ieO4epvAIMBsbe+f2svA45A4iSGJzOiX57
+      tq8PNA1LIECmuwvH0mUUEgnUdAYUMFf5MVdUYrDZyQUHMbrKMFjH7ww5lizBWlc3a69DzgCi
+      JKm2E0UXpiOv/3x8W/vJ4j77JfuO7tw+sZxqP3nDap6KBECUbiYXvJevu5YL3xtAukBC1yQA
+      QtckAELXJABC1yQAQtckAELXJABC1yQAQtckAELXJABC1yQAQtckAELXJABC1yQAQtckAELX
+      JABC1yQAQtckAELXJABC1yQAQtckAELXJABC1yQAQtckAELXJABC1yQAQtckAELXJABC1yQA
+      QtckAELXJABC1yQAQtckAELXJABC1yQAQtckAELXJABC1yQAQtckAELXJABC1yQAQtckAELX
+      JABC1yQAQtckAELXJABC1yQAQtckAELXJABC1yQAQtckAELXJABC1yQAQtckAELXJABC1yQA
+      QtckAELXJABC10yzXYCYW9y3VuH/8PrZLqOYbx5EeiatUkxGWLzmis0kAGJGlNQISvjkbJdR
+      RLEoaOGjM24nXSChaxIAUZJoMsdXXz7GV18+RiSRnbStoGr8YHvXxPLWY0P8755zhMYyRccJ
+      xtJsOzFMPJ0HYCCaZvfpEV7adZZcXp1xXdm8yj+/dpKvvHSUjsH4pG2aNl6XqmkA7O+KSBdI
+      lOa1/f08traWRQEXJwfivLqvjweWVXP0bIxan52zIyl2dYS5fWEFFpMBu8XIQDTN79pD1Pns
+      qKpGOJ7lnVNhFgZc9IaS3HdrFXlV49/e7OCbj7ey50yEwWgaj8OMQYGxdB6z0YDPaaYvkuap
+      22pRFGVSXYd7Y9R4bfzNRxbSMRjnaz85xopGD/mCRiyVYyiWYW9nhLXNXsxGgwRAlGZ1k5f/
+      2tGN3WrEX2bFbDKwryvCO+1hGirs+N1WymwmNE0jr2poGuxoC7GswU33cJKxdJ5kNk+z34nd
+      YhxfH0pSX27nExvrebs9RJndjN9t4fi5UR5aXs2Lb/dSX26nc0jjbDjJE2trMU5+/9Pkd/DC
+      zm4GomncdjPZvMrBnhjBWJpoIseKRg9lNhMoCqlsAUXTzp8Pztv96LPEDrXdyP9LMYcs/9Lt
+      +CtOomka0WQOVQOfw8xgLI2/zEo4kcVqMqAoCgYF3HYzyWyB0WQOv9tKMJamym0lkshhMV3s
+      gdstRlRNw2RQyBXGQ2MyKESTObwOM2ajQjxT4MLbVVU1yl2WiTOAUrMcbeAIAPF0nngmT7Xb
+      SnA0g8duJpHJowFmowGjQcFlNZIvaHIGEKVRFAWf0zKxXOuzAxDw2Ir2dViMOCzGSfv53dZp
+      j20yXvzbbrm44HVc2yWry2bCZTNNqufS41xgNilyESz0TQIgdE0CIHRNAiB0TQIgdE0CIHRN
+      AiB0TQIgdE0CIHRNAiB0TQIgdE0CIHRNAiB0TQIgdE0CIHRNAiB0TQIgdE0CIHRNAiB0TQIg
+      dE0CIHRNAiB0TQIgdE0CIHRNAiB0TQIgdE0CIHRNAiB0TQIgdE0CIHRNpkcXM6JVVqOu8M52
+      GQAolkq0bGh8weqC6g0zPoYEQMyIyih5pW+2ywDAYLWg5s6ML2QB5Yq7T32M97UiIeYYCYAo
+      STZb4D/+5yjP//AI6Ux+0jZV1XhzR/fE8lu7z7FlezfBcHK8ba7Ae8eGpjzugePDRce7mmAo
+      yb/8537+71enuewXvxgKJ9l7ODhtW+kCiZK8vq2b+fVu5tWV0dEd480d3Ty6uZmtu86xeqmf
+      944OU+G1sWFlgPYzESp8Ng4eD1FQVVrmeWg/EyUYStFY4+J0b4yqcjsGg8Jbu86xsMmDbfpf
+      UCry3ItH+OKfLud0T4x9R4bYubefJx6cz4+3dHDnmgBnzo5hNCmsWVpV1FYCIEpSXWln14FB
+      +oYSDA4l8Zfb+PGWDjLZAh3dUSp9dprr3QA47GaefqiFX/++l8ULytm5d/waYnA4wanuKNUV
+      dnoH4uRyBWqqHDOuparCzu4Dg/QOjHF2IE5dtYtXf3uGnr4xstkCLfM8NNaUTdlWAiBKcuea
+      GsqcFgqqxtJHfbxzYJCPP7yQI+1hKnw2TAaFZGq8K3PvhjoUBe7dWM/+Y0M8+eACYmNZ+ocS
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
